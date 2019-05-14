@@ -1,0 +1,16 @@
+version: '3.0' # specify docker-compose version
+
+# Define the services (i.e. containers) to be run
+services:
+  contact-book-database:
+    image: mongo:3.4.18-jessie            # image to build container from
+    ports:
+      - "27017:27017"
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - /Users/davidvargas/Workspace/ngrx-sandbox/contact-book-db:/data/db
+      - /Users/davidvargas/Workspace/ngrx-sandbox/out/log/mongodb:/var/log/mongodb/
+      - /Users/davidvargas/Workspace/ngrx-sandbox/out/db_dump:/usr/db_dump

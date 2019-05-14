@@ -1,0 +1,75 @@
+# OS X
+.DS_Store*
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+*~
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+
+# npm
+contact-book-server/node_modules
+contact-book-server/*.log
+contact-book-server/*.gz
+contact-book-client/node_modules
+contact-book-client/*.log
+contact-book-client/*.gz
+
+
+# Coveralls
+coverage
+
+# Benchmarking
+benchmarks/graphs
+
+
+# Application
+contact-book-server/dist
+contact-book-server/log/**/*.log
+contact-book-server/config/environment.js
+contact-book-server/.idea
+
+contact-book-client/dist
+contact-book-client/tmp
+contact-book-client/out-tsc
+contact-book-client/.idea
+
+contact-book-db
+out

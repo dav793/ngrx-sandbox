@@ -1,0 +1,19 @@
+
+.card {
+    border-bottom: 1px solid #cccccc;
+    margin: 0;
+    padding: 25px 5px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: #dddddd;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card h4 {
+    margin: 0 0 10px 0;
+}

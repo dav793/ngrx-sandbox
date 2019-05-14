@@ -1,0 +1,6 @@
+
+<div *ngFor="let contactId of props(contacts$ | async)" (click)="openContact(contactId)" class="card">
+    <h4>{{ (contacts$ | async)[contactId].name }}</h4>
+    <p>{{ (contacts$ | async)[contactId].email }}</p>
+    <p>{{ (contacts$ | async)[contactId].phone }}</p>
+</div>

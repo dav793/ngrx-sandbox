@@ -1,0 +1,95 @@
+
+<div>
+    <form *ngIf="contactModel">
+
+        <div class="container contact-nav">
+            <div class="buffer"></div>
+            <button mat-button (click)="saveContact(contactModel)" type="submit" class="btn btn-success">Save</button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <h3>Personal</h3>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <h3>Address</h3>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <mat-form-field>
+                        <input matInput placeholder="Name" name="name" [(ngModel)]="contactModel.name">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-3">
+                    <mat-form-field>
+                        <input matInput placeholder="Email" name="email" [(ngModel)]="contactModel.email">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <input matInput placeholder="Suite" name="address.suite" [(ngModel)]="contactModel.address.suite">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <mat-form-field>
+                        <input matInput placeholder="Phone" name="phone" [(ngModel)]="contactModel.phone">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-3">
+                    <mat-form-field>
+                        <input matInput placeholder="Website" name="website" [(ngModel)]="contactModel.website">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <input matInput placeholder="Street" name="address.street" [(ngModel)]="contactModel.address.street">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-sm-3">
+                    <mat-form-field>
+                        <input matInput placeholder="Company Name" name="company.name" [(ngModel)]="contactModel.company.name">
+                    </mat-form-field>
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <input matInput placeholder="City" name="address.city" [(ngModel)]="contactModel.address.city">
+                    </mat-form-field>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-sm-8"></div>
+                <div class="col-sm-4">
+                    <mat-form-field>
+                        <input matInput placeholder="Zip Code" name="address.zipcode" [(ngModel)]="contactModel.address.zipcode">
+                    </mat-form-field>
+                </div>
+
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<!--<pre>{{ contactModel | json }}</pre>-->
+
+<!--<pre>{{ contact$ | async | json }}</pre>-->

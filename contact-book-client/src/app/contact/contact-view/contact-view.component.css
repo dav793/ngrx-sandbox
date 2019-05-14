@@ -1,0 +1,11 @@
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+
+.contact-nav .buffer {
+    flex-grow: 1;
+}
